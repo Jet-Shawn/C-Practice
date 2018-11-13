@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="求和.c">
+    <ClCompile Include="Guess the number game.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
