@@ -1,0 +1,13 @@
+﻿生成启动时间为 2018/11/15 17:04:33。
+     1>项目“G:\C language\Character reputation字符接收\Character reputation字符接收\Character reputation字符接收.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         G:\VC2013\anzhuang\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt "Character reception字符接收.c"
+         Character reception字符接收.c
+       Link:
+         G:\VC2013\anzhuang\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\C language\Character reputation字符接收\Debug\Character reputation字符接收.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"G:\C language\Character reputation字符接收\Debug\Character reputation字符接收.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\C language\Character reputation字符接收\Debug\Character reputation字符接收.lib" /MACHINE:X86 "Debug\Character reception字符接收.obj"
+         Character reputation字符接收.vcxproj -> G:\C language\Character reputation字符接收\Debug\Character reputation字符接收.exe
+     1>已完成生成项目“G:\C language\Character reputation字符接收\Character reputation字符接收\Character reputation字符接收.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.73
