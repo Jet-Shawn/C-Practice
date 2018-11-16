@@ -11,8 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{D2D5DE41-9C08-44A7-BA6A-EB8F5FCE16AB}</ProjectGuid>
-    <RootNamespace>Multiplicationtablefanction</RootNamespace>
+    <ProjectGuid>{30CA0434-0C45-4BE8-AF87-78F358DA986D}</ProjectGuid>
+    <RootNamespace>Exchangevariablefunction</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -64,7 +64,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Multiplication table(fanction).c" />
+    <ClCompile Include="Exchange variable(function).c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
