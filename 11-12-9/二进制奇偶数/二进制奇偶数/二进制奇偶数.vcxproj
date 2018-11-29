@@ -11,8 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{2361E94D-CFD3-47B8-9778-3FF24F4F470A}</ProjectGuid>
-    <RootNamespace>二进制返回值</RootNamespace>
+    <ProjectGuid>{562B23C0-C748-4A84-B3FF-524463F8CD77}</ProjectGuid>
+    <RootNamespace>二进制奇偶数</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
