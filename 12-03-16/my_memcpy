@@ -1,0 +1,39 @@
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+#include <assert.h>
+#include <stdlib.h>
+//memory.h或string.h都可以调memcpy
+#include <memory.h>
+//实现内存拷贝函数memcpy
+
+void* my_memcpy(void* dest, const void* sour, size_t count)
+{
+	void* ret = dest;
+	assert(dest != NULL);
+	assert(sour != NULL);
+
+	while (count--)
+	{
+		*(char*)dest = *(char*)sour;
+		//或者写成++(char*)dest，因为++的优先级高
+		((char*)dest)++;
+		((char*)sour)++;
+	}
+	return ret;
+}
+
+int main()
+{
+	int i = 0;
+	int a[] = { 1, 2, 3, 4, 5 };
+	int b[10] = { 0 };
+	my_memcpy(b, a, 32);
+	for (i = 0; i < 5; i++)
+	{
+		printf("%d", b[i]);
+	}
+	printf("\n");
+	system("pause");
+	return 0;
+}
