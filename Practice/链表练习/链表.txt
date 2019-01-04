@@ -1,0 +1,39 @@
+//数据结构作业
+struct Vector{
+	int array[100];
+	int size;
+};
+
+//头插
+void VectorPushFront(struct Vector* vector, int val){
+	assert(vector != NULL);
+
+	int i = vector->size;
+	while (i--){
+		//遍历过程中把后一个数的值用前一个值覆盖
+		vector->array[i] = vector->array[i - 1];
+	}
+	vector->array[0] = val;
+	vector->size++;
+}
+
+//链表部分
+ struct ListNode {
+     int val;
+     struct ListNode *next;
+ };
+
+ struct List{
+	 struct ListNode* head;
+ };
+
+ //链表尾删
+ void ListPopBack(struct ListNode* head){
+	 assert(head != NULL);
+
+	 struct ListNode* cur = head;
+	 while (cur->next != NULL){
+		 cur = cur->next;
+	 }
+	 cur->next = NULL;
+ }
