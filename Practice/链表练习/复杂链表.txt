@@ -1,0 +1,57 @@
+ //删除链表的所有val值
+ void ListRemoveAll(struct List* list, int val){
+	 struct ListNode* cur = list->head;
+	 struct ListNode* prev = NULL;
+
+	 //特殊情况，若第一个就 == val值
+	 if (list->head->val == val){
+		 list->head = list->head->next;
+		 prev = list->head;
+		 cur = prev->next;
+	 }
+
+	 while (cur != NULL){
+		 //值不相等
+		 if (cur->val != val){
+			 prev = cur;
+			 cur = cur->next;
+		 }
+		 //值相等
+		 else
+		 {
+			 cur = cur->next;
+			 prev->next = cur;
+		 }
+	 }
+ }
+ //冒泡排序
+ void BubbleSort(int array[], int size){
+	 //用计数器对冒泡进行优化：若已经有序就return
+	 int sum = 0;
+	 //趟数
+	 for (int i = 0; i < size - 1; i++){
+		 for (int j = 0; j < size - 1 - i; j++){
+			 if (array[j]>array[j+1]){
+				 int tem = array[j];
+				 array[j] = array[j+1];
+				 array[j+1] = tem;
+				 sum++;
+			 }
+		 }
+		 if (sum == 0){
+			 return;
+		 }
+		 else
+			 sum = 0;
+	 }
+ }
+ //复杂链表的复制
+ struct RListNode{
+	 int val;
+	 struct RListNode* random;
+	 struct RListNode* next;
+ };
+
+ struct RListNode *RListCopy(struct RListNode *head){
+
+ }
