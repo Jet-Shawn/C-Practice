@@ -1,0 +1,80 @@
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//打印数组
+void PrintArray(int array[], int size){
+	for (int i = 0; i < size; i++){
+		printf("%d ", array[i]);
+	}
+	printf("\n");
+}
+
+//插入排序
+void InsertSort(int array[], int size){
+	for (int i = 1; i < size; i++){
+		int j = 0;
+		//交换后可能会覆盖这个数，所以先拿个临时变量存一下
+		int tem = array[i];
+		for (j = i - 1; j>=0;j--){
+			//下标为i的数正在找插入位置
+			if (tem >= array[j]){
+				break;
+			}
+			//如果排序正常，则向后移位
+			else{
+				array[j + 1] = array[j];
+			}
+		}
+			array[j + 1] = tem;
+	}
+}
+
+void swap(int *a, int *b){
+	int* tem = a;
+	a = b;
+	b = tem;
+}
+//向下调整+堆排序
+void AdjustDown(int array[], int size,int root){
+	//左孩子下标为2R+1
+	int left = 2 * root + 1;
+	//是否为叶子结点（若越界则为叶子结点）
+	if (left >= size){
+		return;
+	}
+	//不是叶子结点继续向下调整
+	//判断左孩子的值与root的值的大小
+	int max = left;
+	if (left + 1<size && array[left+1] > array[left]){
+		max = i + 1;
+	}
+	if (array[max] <= array[root]){
+		return;
+	}
+	swap(array[max], array[root]);
+
+	AdjustDown(array, size, max);
+
+}
+void HeapSort(int array[], int size){
+	for (int i = (size - 2) / 2; i >= 0; i--) {
+		AdjustDown(array, size, i);
+	}
+	for (int i = 0; i < size - 1; i++) {
+		Swap(&array[0], array + size - 1 - i);
+		// 向下调整，把堆结构调整为正确状态
+		AdjustDown(array, size - 1 - i, 0);
+	}
+}
+
+void TestSort(){
+	int array[] = {
+		1, 3, 5, 7, 9, 2, 4, 6, 8, 0
+	};
+	int size = 10;
+	PrintArray(array, size);
+	InsertSort(array, size);
+	PrintArray(array, size);
+}
