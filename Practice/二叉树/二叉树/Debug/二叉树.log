@@ -1,0 +1,16 @@
+﻿生成启动时间为 2019/1/15 22:48:14。
+     1>项目“G:\C language\二叉树\二叉树\二叉树.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         G:\VC2013\anzhuang\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt test.c tree.c
+         tree.c
+     1>g:\c language\二叉树\二叉树\tree.c(24): error C2440: “函数”: 无法从“TreeNode”转换为“TreeNode *”
+     1>g:\c language\二叉树\二叉树\tree.c(24): warning C4024: “firstTree”: 形参和实参 1 的类型不同
+         test.c
+     1>g:\c language\二叉树\二叉树\tree.c(24): error C2440: “函数”: 无法从“TreeNode”转换为“TreeNode *”
+     1>g:\c language\二叉树\二叉树\tree.c(24): warning C4024: “firstTree”: 形参和实参 1 的类型不同
+         正在生成代码...
+     1>已完成生成项目“G:\C language\二叉树\二叉树\二叉树.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.21
