@@ -1,0 +1,15 @@
+void bubblesort(int size,int array[]){
+	for (int i = 0; i < size - i; i++){
+		int sum = 0;
+		for (int j = 0; j < size; j++){
+			if (array[j] < array[j + 1]){
+				swap(array[j], array[j + 1]);
+				sum++;
+			}
+		}
+		if (sum == 0){
+			return;
+		}
+	}
+	return;
+}
